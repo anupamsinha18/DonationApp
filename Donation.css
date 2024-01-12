@@ -1,0 +1,133 @@
+/* DonationPage.css */
+body {
+  background: url('https://img.freepik.com/free-photo/hands-cupping-heart-love-relationship-concept_53876-129426.jpg?size=626&ext=jpg&ga=GA1.1.1666073846.1696922075&semt=sph') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 80px;
+    
+  }
+  
+  .card {
+ margin-bottom: 30px;
+    width: 600px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    opacity: 0.9;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="number"],
+  .form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+  }
+
+  
+  .form button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    width: 300px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .card h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #45a049;
+  }
+  .form-field .phone-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-field select,
+  .form-field input[type="text"] {
+    transform: translateX(-14px);
+    width: 34vw; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .form-field select {
+    width: 20%; /* Set the width for the country code */
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .form-field input[type="text"] {
+    border-radius: 0 4px 4px 0;
+  }
+  
+  /* Add a line between the country code and phone number */
+  .form-field .phone-input::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 60%;
+    background-color: #ccc;
+    margin: 0 2%; /* Adjust the spacing */
+  }
+.error-message{
+  font-size: 14px;
+  color: red;
+}
+
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
